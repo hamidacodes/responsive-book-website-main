@@ -184,6 +184,17 @@ img {
 }
 }
 
+.nav__list{
+   display: flex;
+   justify-content: space-between;
+}
+
+.nav__link{
+   color: var(--text-color);
+   transition: color .4s;
+}
+
+
 /* Add shadow header */
 
 
