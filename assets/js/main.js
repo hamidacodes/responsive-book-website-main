@@ -14,6 +14,16 @@ if(searchButton){
    })
 }
 
+// /====== MENU HIDDEN ======/
+
+/* Validate if constant exists */
+
+if(searchClose){
+    searchClose.addEventListener('click', () =>{
+        searchContent.classList.remove('show-search')
+    })
+}
+
 /*=============== LOGIN ===============*/
 
 
