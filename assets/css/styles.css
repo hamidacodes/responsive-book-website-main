@@ -236,7 +236,7 @@ img {
    left: 0;
    width: 100%;
    height: 100%;
-   z-index: 100;
+   z-index: var(--z-fixed);
    background-color: hsla(230, 12%, 96%, .6);
    backdrop-filter: blur(16px);
    padding: 8rem 1.5rem;
@@ -280,7 +280,7 @@ img {
 /*=============== LOGIN ===============*/
 .login{
    position: fixed;
-   top: 0;
+   top: -100%;
    left: 0;
    width: 100%;
    height: 100%;
@@ -323,11 +323,50 @@ img {
    padding: 1rem;
    color: var(--text-color);
 }
+.login__signup,
+.login__forgot{
+   display: block;
+   font-size: var(--small-font-size);
+}
 
+.login__signup{
+   margin-bottom: .5rem;
+}
+
+.login__signup a{
+  color: var(--first-color);
+  font-weight: var(--font-medium);
+
+}
+
+
+.login__forgot{
+  color: var(--first-color);
+}
+
+.login__button{
+  width: 100%;
+  cursor: pointer;
+
+}
+
+
+.login__close{
+  position:absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
 
 
 /* Show login */
 
+.show-login{
+  top: 0;
+
+}
 
 /*=============== HOME ===============*/
 
@@ -336,6 +375,23 @@ img {
 
 
 /*=============== BUTTON ===============*/
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  padding: 1rem 1.5rem;
+  transition: box-shadow .4s;
+}
+
+.button:hover{
+  box-shadow: 0 4px 32px hsla(230, 72%, 326%, .4);
+
+}
+
+
+
+
 
 
 /*=============== SERVICES ===============*/
