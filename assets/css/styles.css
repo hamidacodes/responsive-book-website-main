@@ -456,6 +456,15 @@ img {
 
 /*=============== FEATURED ===============*/
 
+.featured__card{
+  position: relative;
+  text-align: center;
+  background-color: var(--container-color);
+  padding: 2rem;
+  overflow: hidden;
+  border: 2px solid var(--border-color);
+  transition: border .4s,background-color .4s;
+}
 
 /* Swiper class */
 
